@@ -5,5 +5,4 @@ functions:
   webtorrent:
     lang: python3-flask-armhf-libtorrent
     handler: ./downloader
-    image: ghrc.io/jes3rk/webtorrent/downloader:latest
-
+    image: ghcr.io/${GITHUB_USERNAME}/webtorrent/downloader:latest

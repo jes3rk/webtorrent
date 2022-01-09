@@ -1,5 +1,5 @@
 FROM openfaas/of-watchdog:0.7.7 as watchdog
-FROM armhf/python:3.9-alpine
+FROM --platform=$TARGETPLATFORM python:3.9-alpine
 
 ARG ADDITIONAL_PACKAGE
 
