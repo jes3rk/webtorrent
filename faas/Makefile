@@ -1,7 +1,7 @@
 include ../.env
 
 build_faas:
-	env GITHUB_USERNAME=${GITHUB_USERNAME} faas-cli publish -f webtorrent.yml --platforms ${OPENFAAS_ARCH}
+	env GITHUB_USERNAME=${GITHUB_USERNAME} faas-cli publish -f webtorrent.yml --platforms ${OPENFAAS_ARCH} --build-option prod
 
 deploy_faas:
 	env GITHUB_USERNAME=${GITHUB_USERNAME} faas-cli deploy --gateway ${OPENFAAS_GATEWAY} -f webtorrent.yml

@@ -1,2 +1,6 @@
 language: python3-flask-armhf-libtorrent
 fprocess: python index.py
+build_options:
+  - name: prod
+    packages:
+      - python3-libtorrent
