@@ -1,0 +1,5 @@
+faas/template/*
+!faas/template/python3-flask-armhf-libtorrent
+build
+
+.env

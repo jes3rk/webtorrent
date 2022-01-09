@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+functions:
+  webtorrent:
+    lang: python3-flask-armhf-libtorrent
+    handler: ./downloader
+    image: ghrc.io/jes3rk/webtorrent/downloader:latest
+
